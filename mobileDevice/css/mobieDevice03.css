@@ -1,0 +1,39 @@
+/*input*/
+/*frame*/
+@media screen and (max-width: 450px) {
+    .inputing {
+        width: 100%;
+        height: 35px;
+        padding: 0 12px;/*暂定*/
+        position: fixed;
+        bottom: 0;
+        z-index: 999;
+    }
+    .checkbox {
+        width: 100%;
+        position: fixed;
+        bottom: 33px;
+        z-index: 9999;
+    }
+    .checkline {
+        min-height: 35px;
+        padding: 0 20px;/*待定*/
+    }
+}
+/*styleSet*/
+@media screen and (max-width: 450px) {
+    .inputing {
+        background: #fff;
+        color: #b0b0b0;
+        font-size: 90%;
+        line-height: 35px;
+    }
+    .checkline {
+        background: #fbfafb;
+        color: #4b83cd;
+        line-height: 35px;
+    }
+    .checkline+.checkline {
+        border-top: 0.5px solid #e2e2e2;
+    }
+}

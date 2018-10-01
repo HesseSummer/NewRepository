@@ -1,0 +1,39 @@
+/*universal*/
+@font-face {
+    font-family: 'myFont';
+    src: local('../font/myfont.woff') format('woff'),
+         local('../font/myFont.woff2') format('woff2'),
+         local('../font/myFont.ttf') format('ttf');
+}
+/*frame*/
+.iphone-screen {
+    font-family: 'myFont', 'Microsoft YaHei', 'Source Hans Sans CN';
+    font-size: 12px;
+    position: relative;/*辅助checkbox定位*/
+}
+    .header {
+        width: 100%;/*很惊讶！为什么没有自动地100%呢？！*/
+        height: 6%;
+        padding: 3px 0;/*待定*/
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+/*styleSet*/
+.header {
+    background: #5a88d3;
+    color: #fff;
+    
+}
+.title {
+    font-size: 130%;/*待定*/
+    text-align: center;
+}
+.subtitle {
+    font-size: 80%;/*待定*/
+    text-align: center;
+}
+

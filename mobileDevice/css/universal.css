@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'myFont';
+    src: local('../font/myfont.woff') format('woff'),
+         local('../font/myFont.woff2') format('woff2'),
+         local('../font/myFont.ttf') format('ttf');
+}

@@ -1,0 +1,93 @@
+/**framework**/
+    .main {
+        height: 88%;
+        padding-bottom: 100px;/*事件触发时改变；暂定*/
+        overflow: auto;/*有一个问题：怎么样让增加新元素后始终保持视口在下方*/
+    }
+    .timer {
+        margin: 20px 0;/*待定->确定*/
+    }
+    .host, .guest {
+        margin: 20px 0;/*待定*/
+
+        display: flex;
+    }
+    .host {
+        justify-content: flex-start;        
+    }
+    .guest {
+        justify-content: flex-end;
+    }
+
+/*.profile及其子孙*/
+    .profile {
+        margin: 0 12px;
+        width: 32px;
+        height: 32px;
+
+        position: relative;
+    }
+    .profileImg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -10px;
+        margin-top: -10px;
+        width: 20px;/*待定*/
+        height: 20px;/*待定*/
+    }
+
+    .dialog {
+        max-width: 200px;/*待定*/
+        padding: 12px;/*待定*/
+    }
+
+
+
+/**styleSet**/
+    .main {
+        background: #f2f2f2;
+    }
+    .timer {
+        text-align: center;
+        font-size: 40%;
+        color: #d3dbcd;
+    }
+
+/*.profile及其子孙*/
+    .host .profile {
+        border-radius: 35px 0 35px 35px;/*暂定*/
+        background: #e1e2e7;
+
+    }
+    .guest .profile {
+        border-radius: 0 35px 35px 35px;/*暂定*/
+        background: #fbfafb;
+    }
+    .profileImg {
+        border-radius: 20px;
+    }
+    .host .profileImg {
+        background-image: url(../img/feidian.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .guest .profileImg {
+        background-image: url(../img/guestProfile.png);
+        background-size: contain;
+    }
+
+/*.dialog*/
+    .dialog {
+        line-height: 1.3;
+    }
+    .host .dialog {
+        border-radius: 0 100px 100px 100px;
+        background: #e1e2e7;
+        color: rgb(151, 151, 163);
+    }
+    .guest .dialog {
+        border-radius: 100px 0 100px 100px;
+        background: #fbfafb;
+        color: #4b83cd;
+    }

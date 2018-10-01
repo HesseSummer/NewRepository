@@ -1,0 +1,46 @@
+/*.body .header*/
+/*以iphone8的宽度(414px)为准*/
+/*framework*/
+@media screen and (max-width: 450px) {
+    html, body {/*html也要100%啊！*/
+        margin: 0; 
+        height: 100%;
+    }
+    .mobile-content {
+        height: 100%;
+    }
+    .header {
+        width: 100%;/*很惊讶！为什么没有自动地100%呢？！*/
+        height: 35px;
+        padding: 3px 0;/*待定*/
+
+        position: fixed;
+        top: 0;
+        z-index: 999;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+/*styleSet*/
+@media screen and (max-width: 450px) {
+    body {
+        font-family: 'myFont', 'Microsoft YaHei', 'Source Hans Sans CN';
+        font-size: 12px;
+    }
+    .header {
+        background: #5a88d3;
+        color: #fff;
+        
+    }
+    .title {
+        font-size: 130%;/*待定*/
+        text-align: center;
+    }
+    .subtitle {
+        font-size: 80%;/*待定*/
+        text-align: center;
+    }
+}
